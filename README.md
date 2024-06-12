@@ -12,9 +12,21 @@
 ## Inicializar el repositorio en la carpeta de mi proyecto
 Ejecutar el comando:
 - ```git init```
+Agregar los archivos al repositorio mediante un commit.
+- ```git add .```
+- ```git commit -m 'Creación del proyecto de React.'```
 
 ## Crear el repositorio en Github y subimos el proyecto recién creado
+Crear en Github un repositorio para el proyecto de React.
+- el demo se llama: ```protalento-10-demo-reactUI```
+Enlazar el repositorio de Github con el repositorio de mi ambiente local:
+- Ejecutar los siguientes comandos que me da Github. Adecual la URL de cada uno de sus repositorios.
 
+```
+git remote add origin https://github.com/heladio-devf-mx/protalento-10-demo-reactUI.git
+git branch -M main
+git push -u origin main
+```
 
 
 ### React + Vite
