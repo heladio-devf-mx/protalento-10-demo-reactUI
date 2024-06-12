@@ -31,7 +31,7 @@ git push -u origin main
 ## Limpiar los componentes pre-existentes y configurar Dependencias.
 Limpiamos el contenido del componente principal App.jsx.
 
-Identificamos las depencias para el proyecto "maquetado".
+### Identificamos las depencias para el proyecto "maquetado".
 - Imagen creada en clase, se importará en la carpeta Assets.
 Paquete necesarios:
 - Bootstrap (Estilos y componentes)
@@ -44,7 +44,22 @@ Paquete necesarios:
   - [Referencia](https://www.react-hook-form.com/)
   - Instalar con el comando: ```npm install react-hook-form```
 
+## Configurar El Router para las rutas de la aplicación
+1. Crear carpeta ```router``` y adentro el archivo ```RoutesIndex.js```
+con el contenido necesario.
+2. En el archivo ```RoutesIndex.jsx``` va la configuración de rutas y componentes (páginas).
+3. Configurar la aplicación en el copmponente ```App.jsx``` para que tenga el contexto del ```BrowserRouter```.
+4. Importar el RoutesIndex para que las rutas funcionen ahora sí. Esto mostrará el componente que las rutas indiquen en mi aplicación.
 
+### Crear componente NavBar para navegar en la aplicación
+1. En el componente ```NavBar``` Se configuran las rutas correspondientes para el proyecto.
+2. Se crean las páginas o componentes necesarios (aunque sea semi-vacíos) para validar que las rutas funcionen.
+3. Si hace falta se crean componenes como el Header para complementar la interfase de la página.
+
+## Configurar El Contexto para el estado global de la aplicación
+
+
+## Crear los componentes para la lista de películas y el detalle
 
 ### React + Vite
 
