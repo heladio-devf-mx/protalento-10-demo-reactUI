@@ -8,6 +8,8 @@ const MoviesContext = createContext();
 const MoviesContextProvider = ({ children }) => {
   // 2.2 Definir qué es lo que quiero compartir en mi estado global/context
   const [moviesList, setMoviesList] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null);
+  
   // 2.4 Configurar la comunicación con el API si hace falta
   useEffect(() => {
     const fetchMovies = async () => {
@@ -21,7 +23,9 @@ const MoviesContextProvider = ({ children }) => {
   // 2.3 Cada que entremos a este contexto, queremos que recupere la lista de películas
   const contextData = {
     moviesList,
-    setMoviesList
+    setMoviesList,
+    selectedMovie,
+    setSelectedMovie
   };
 
   return (

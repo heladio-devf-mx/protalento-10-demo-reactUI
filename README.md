@@ -75,6 +75,10 @@ con el contenido necesario.
 4. Usar el contexto de Movies en el o los componentes necesarios
 4.1. Importamos el contexto y el componente hijo que lo requiera (MoviesList).
 4.2. Crear el componente hijo MoviesList (ver Componente).
+4.3. 4.1. Importamos el contexto y el componente hijo que lo requiera (MoviesDetail).
+
+- Es parte del desarrollo ir puliendo estilos (CSS).
+
 ### Contexto de Seguridad (Auth)
 
 ## Crear los componentes para la lista de películas y el detalle

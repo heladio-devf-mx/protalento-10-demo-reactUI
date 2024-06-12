@@ -7,12 +7,14 @@ const MoviesList = () => {
   const moviesContext = useContext(MoviesContext);
   // console.log(moviesContext);
   return (
-    <section>
+    <section style={{width: "35%"}} id="movies-list-container">
       <h3>Lista de Películas</h3>
       <ul>
         {
           moviesContext.moviesList.map((movie) => (
-            <li key={movie._id}>
+            <li
+              key={movie._id}
+              onClick={() => moviesContext.setSelectedMovie(movie) }>
               {movie.title}
             </li>
           ))

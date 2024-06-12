@@ -1,17 +1,20 @@
+import MovieDetail from "../components/MovieDetail";
 import MoviesList from "../components/MoviesList";
 import { MoviesContextProvider } from "../contexts/MoviesContext";
 
 const Movies = () => {
   return (
     // Este es el paso 3. del uso de contexto, lo configuramos
-    <MoviesContextProvider> 
+    <MoviesContextProvider>
       {/* Children components-> Usamos el contexto en los hijos */}
       <div>
-        <header>
+        <header style={{height: "70px"}}>
           <h2>Bienvenido a tu colección de Películas</h2>
         </header>
-        <MoviesList />
-        <section>Detalle de Películas</section>
+        <div className="movies-container">
+          <MoviesList />
+          <MovieDetail />
+        </div>
       </div>
     </MoviesContextProvider>
   );
