@@ -28,6 +28,23 @@ git branch -M main
 git push -u origin main
 ```
 
+## Limpiar los componentes pre-existentes y configurar Dependencias.
+Limpiamos el contenido del componente principal App.jsx.
+
+Identificamos las depencias para el proyecto "maquetado".
+- Imagen creada en clase, se importará en la carpeta Assets.
+Paquete necesarios:
+- Bootstrap (Estilos y componentes)
+  - [Referencia y configuración](https://blog.logrocket.com/using-bootstrap-react-tutorial-examples/)
+  - Instalar con el comando: ```npm install bootstrap```
+- React Router + DOM (Rutas)
+  - [Referencia](https://v5.reactrouter.com/web/guides/quick-start/installation)
+  - Instalar con el comando: ```npm install react-router-dom```
+- React Hook Form + Yup + Hookfrom Resolver (Formularios)
+  - [Referencia](https://www.react-hook-form.com/)
+  - Instalar con el comando: ```npm install react-hook-form```
+
+
 
 ### React + Vite
 
