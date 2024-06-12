@@ -57,7 +57,25 @@ con el contenido necesario.
 3. Si hace falta se crean componenes como el Header para complementar la interfase de la página.
 
 ## Configurar El Contexto para el estado global de la aplicación
-
+### Contexto de Películas
+1. Crear carpeta ```contexts``` dentro de ```src``` y adentro el archivo ```MoviesContext.js```
+con el contenido necesario.
+2. En el Contexto de las películas o el estado global, queremos que se pueda conectar con el API para pedir la lista de películas (según el ejmplo).
+En el archivo de MoviesContext.jsx se agrega lo siguiente:
+  1. Crear objeto del context sin un valor por defecto (vacío).
+  2. Agregar un Provider: es quien va a proveer de información y/o funciones al contexto
+  2.1. Lo haremos a través de un componente de React
+  2.2. Definimos qué es lo que se compartirá a través del cotexto.
+  2.3. Cada que entremos a este contexto, queremos que recupere la lista de películas
+  2.4. Configurar la comunicación con el API si hace falta
+  2.5. Crear el servicio si hiciera falta.
+    1. Crear carpeta ```services``` dentro de ```src``` y adentro el archivo ```moviesService.js```
+con el contenido necesario.
+3. Configurar el contexto para poder usarlo.
+4. Usar el contexto de Movies en el o los componentes necesarios
+4.1. Importamos el contexto y el componente hijo que lo requiera (MoviesList).
+4.2. Crear el componente hijo MoviesList (ver Componente).
+### Contexto de Seguridad (Auth)
 
 ## Crear los componentes para la lista de películas y el detalle
 

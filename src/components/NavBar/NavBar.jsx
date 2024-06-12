@@ -22,7 +22,7 @@ const NavBar = () => {
       <section>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
             <NavLink to="/movies">Movies</NavLink>
