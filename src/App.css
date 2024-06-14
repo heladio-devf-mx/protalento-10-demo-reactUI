@@ -48,3 +48,7 @@
 #movies-list-container li:hover {
   cursor: pointer;
 }
+
+nav {
+  min-width: 80%;
+}
