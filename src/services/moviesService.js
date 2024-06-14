@@ -1,5 +1,5 @@
-const API_URL = `http://localhost:3003/api/v1/`;
-
+// const API_URL = `http://localhost:3003/api/v1/`;  // URL estática de mi ambiente local
+// variable dinámica para saberl la URL de mi API(backend)
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const getMoviesList = async() => {
